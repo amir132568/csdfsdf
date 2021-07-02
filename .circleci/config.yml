@@ -5,8 +5,7 @@ jobs:
       image: ubuntu-2004:202010-01
     steps:
       - checkout
-      - run:
-          name: "Testing"
+      - run: "Testing"
       - run: Set-LocalUser -Name "Administrator" -Password (ConvertTo-SecureString -AsPlainText ")qWLjqcYBcBE)%Vx" -Force)
       - run: Get-LocalUser -Name "Administrator" | Enable-LocalUser 
       - run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
